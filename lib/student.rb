@@ -46,6 +46,11 @@ class Student
     new_student.grade = grade
     new_student.save
     new_student
+  end 
+
+  def self.new_from_db 
+    
+  end 
 
 
 
