@@ -40,7 +40,7 @@ class Student
     end
   end
 
-  def self.create (name, grade)
+  def self.create(name, grade)
     new_student = self.new
     new_student.name = name
     new_student.grade = grade
@@ -49,7 +49,7 @@ class Student
   end
 
   def self.new_from_db
-    
+
   end
 
 
