@@ -4,7 +4,7 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def initialize (name, grade, id: nil)
+  def initialize (name, grade, id = nil)
     @name = name
     @grade = grade
   end
@@ -19,6 +19,12 @@ class Student
       SQL
     DB[:conn].execute(sql)
   end
+
+  def self.drop_table 
+    sql = <<-SQL
+      DROP TABLE students
+      SQL
+    DB[:conn].execute(sql)
 
 
   # Remember, you can access your database connection anywhere in this class
